@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<link rel="icon" href="image/download.png" type="image/png">
+<TITLE>Evgenii Sviridov Download Page!</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+        var sizes = new Array(0,1,2,4,8,10,12);
+        sizes.pos = 0;
+
+function Elastic()
+{
+        var el = document.all.elastic
+        if (null == el.direction)el.direction = 0
+        else if ((sizes.pos > sizes.length - 2) || (0 == sizes.pos))
+        el.direction *= -1
+        el.style.letterSpacing = sizes[sizes.pos += el.direction]
+        setTimeout('Elastic()',100)
+}
+</SCRIPT>
+
+<BODY bgcolor="black" onLoad=Elastic()>
+<CENTER>
+<br>
+<font color="white"><h2>Welcome to Download Page</h2>
+<font color="orange"><H1 ID="elastic" ALIGN="Center">E V G E N I I &nbsp; &nbsp; S V I R I D O V</H1>
+<font color="white">Last Update: 15 May 2024.<br><br><br>
+
+
+
+<img src="image/3.png">
+<CENTER>
+<br><a href="index.html"><font color="orange">Return Home Page</a>
+<br>
+<font color="white"><h2>Thank You for Visiting</h2>
+</BODY>
+</HTML>
